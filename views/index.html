@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.describe th{
+    text-align: center;
+}
+
+    </style>
+    <title>Index</title>
+</head>
+<body>
+    
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>RGM:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Fonseca Policarpo da silva</td>
+                <td>29384699</td>
+            </tr>
+            <tr class="active-row">
+                <td>Luan Rafael da Cruz Silva</td>
+                <td>28418921</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="styled-table describe">
+        <thead>
+            <tr>
+                <th>Descrição do projeto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Projeto desenvolvido na aula de técnicas de programação com o intuito de aprimorar 
+                    o conteúdo apresentado em sala.
+                    O projeto consiste em um pequeno webService desenvolvido em javascript usando 
+                    o node como runtime com a configuração de rotas
+                    e disponibilização de arquivos.
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
